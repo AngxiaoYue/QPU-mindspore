@@ -28,6 +28,7 @@ Tensor of shape ```(∗,out_channels)```.
 
 ## Examples
 ```python
+>>> context.set_context(mode=context.PYNATIVE_MODE, device_target="GPU") # or CPU
 >>> x = Tensor(np.array([[[0.6836, 0.6947, -0.2234, 0.0125], [0.4961, 0.5503, -0.0914, 0.6653]], [[0.8631, 0.2327, -0.4219, 0.1512], [0.7958, -0.0660, -0.5379, -0.2703]]]), mindspore.float32)
 >>> batch, num_joint, _ = x.shape
 >>> x = ops.transpose(x, (0, 2, 1))
