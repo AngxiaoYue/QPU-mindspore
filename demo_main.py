@@ -46,6 +46,7 @@ def worker_init_fn(worker_id):
 def train(config):
 
     ## prepare for dataset
+    model_name = config["net"]
     num_epochs = int(config['num_epochs'])
     batch_size = int(config['batch_size'])
     learning_rate = float(config['learning_rate'])
@@ -92,7 +93,7 @@ def train(config):
 
  
     config_ck = CheckpointConfig(save_checkpoint_steps=1177, keep_checkpoint_max=16)
-    ckpoint_cb = ModelCheckpoint(prefix="checkpoint_qmlp_lstm", directory=model_path, config=config_ck)
+    ckpoint_cb = ModelCheckpoint(prefix="checkpoint_{}".format(model_name), directory=model_path, config=config_ck)
     steps_res = {"epoch": [], "loss_value": [], "acc": []}
     step_loss_acc_info = StepLossAccInfo(net , testloader, steps_res, log_path)
     net.train(num_epochs, trainloader, callbacks=[ckpoint_cb, LossMonitor(1177), step_loss_acc_info], dataset_sink_mode=False)

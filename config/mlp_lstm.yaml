@@ -4,6 +4,7 @@ resume: ''
 padding_input: False
 device_ids: [1]
 in_channels: 4
+model_path: '../saved_model'
 
 # Data
 dataset: 'ntu'
