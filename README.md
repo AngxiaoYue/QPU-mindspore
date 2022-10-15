@@ -1,6 +1,6 @@
 # QPU-mindspore
 Quaternion Product Units (QPU) implemented by mindspore. 
-**The QPU can be used as a network layer which is scalable and useful**. The detailed README is placed in ``qpu`` directory,
+**The QPU can be used as a network layer which is compatible and useful**. The detailed README is placed in ``qpu`` directory,
 
 ## Data preparation
 We use the the [NTU RGB+D dataset](https://github.com/shahroudy/NTURGB-D). We recommend you to put them under the ```raw_data``` directory. Please refer to their respective project pages for permission and downloading. Use the following commands to convert to our data formats.
