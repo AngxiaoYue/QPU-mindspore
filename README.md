@@ -9,7 +9,7 @@ python data/scripts/ntu_gendata.py <dir of raw data> --mode xyz --bench <xview o
 python data/scripts/ntu_gendata.py <dir of raw data> --mode qrel --bench <xview or xsub>
 python data/scripts/gen_edge.py <dir of qrel data> --dataset ntu
 ```
-Generated data is in ```<dir of raw data>/../NTU-RGB-D/qrel```
+Generated data is in ```<dir of raw data>/NTU-RGB-D/qrel```
 ## Train and Test
 We choose **RMLP_LSTM** and **QMLP_LSTM** as our demo models. we provide ```.yaml``` file for convenient train and test.
 ```
