@@ -12,7 +12,7 @@ python data/scripts/gen_edge.py <dir of qrel data> --dataset ntu
 Generated data is in ```<dir of raw data>/NTU-RGB-D/qrel```.
 
 ## Train and Test
-We choose **RMLP_LSTM** and **QMLP_LSTM** as our demo models. we provide ```.yaml``` file for convenient train and test.
+We choose **RMLP_LSTM** and **QMLP_LSTM** as our demo models. Where QMLP_LSTM uses the QPU. we provide ```.yaml``` file for convenient train and test.
 ```
 python demo_main.py config/<config name>.yaml
 ```
