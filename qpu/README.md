@@ -38,3 +38,4 @@ Tensor of shape ```(∗,out_channels)```.
 >>>ptint(output.shape)
 (2, 16)
 ```
+For systematic example, please refer to the ```demo_main.py``` to run the demo models.
