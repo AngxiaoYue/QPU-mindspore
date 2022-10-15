@@ -1,2 +1,2 @@
 # QPU-mindspore
-Quaternion Product Units (OPU) implemented by mindspore
+Quaternion Product Units (QPU) implemented by mindspore
