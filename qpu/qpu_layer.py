@@ -9,7 +9,7 @@ from mindspore import nn
 from mindspore.common.initializer import (Normal, Uniform, XavierUniform,
                                           _calculate_fan_in_and_fan_out,
                                           initializer)
-from qpu_op import qpu_linear, quaternion_normalize
+from qpu.qpu_op import qpu_linear, quaternion_normalize
 
 
 class QPU(nn.Cell):
