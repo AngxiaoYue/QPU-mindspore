@@ -1,0 +1,28 @@
+# Net
+net: 'qmlp_lstm'
+resume: ''
+padding_input: False
+device_ids: [0]
+in_channels: 4
+rinv: True
+model_path: '../saved_model'
+
+# Data
+dataset: 'ntu'
+ntu: '../raw_data/NTU-RGB-D/qrel/xview'
+use_edge: False
+edge_only: False
+data_augmentation: True
+data_param:
+  num_frames: 20
+
+# Optimizer
+num_epochs: 200
+start_epoch: 1
+batch_size: 32
+learning_rate: 5e-4
+weight_decay: 1e-5
+
+# Log
+logdir: '../logs/qmlp_lstm'
+tqdm: True
