@@ -3,7 +3,7 @@ Quaternion Product Units (QPU) implemented by mindspore.
 **The QPU can be used as a network layer which is scalable and useful**. The detailed README is placed in ``qpu`` directory,
 
 ## Data preparation
-use the the [NTU RGB+D dataset](https://github.com/shahroudy/NTURGB-D). Please refer to their respective project pages for permission and downloading. Use the following commands to convert to our data formats.
+We use the the [NTU RGB+D dataset](https://github.com/shahroudy/NTURGB-D). Please refer to their respective project pages for permission and downloading. Use the following commands to convert to our data formats.
 ```
 python data/scripts/ntu_gendata.py <dir of raw data> --mode xyz --bench <xview or xsub>
 python data/scripts/ntu_gendata.py <dir of raw data> --mode qrel --bench <xview or xsub>
