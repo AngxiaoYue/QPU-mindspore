@@ -28,5 +28,12 @@ Tensor of shape ```(∗,out_channels)```.
 
 ## Examples
 ```python
-
+>>> x = Tensor(np.array([[[0.6836, 0.6947, -0.2234, 0.0125], [0.4961, 0.5503, -0.0914, 0.6653]], [[0.8631, 0.2327, -0.4219, 0.1512], [0.7958, -0.0660, -0.5379, -0.2703]]]), mindspore.float32)
+>>> batch, num_joint, _ = x.shape
+>>> x = ops.transpose(x, (0, 2, 1))
+>>> x = ops.reshape(x, (batch, 4 * num_joint))
+>>> net = QPU(4 * num_joint, 16)
+>>> output = net(x)
+>>>ptint(output.shape)
+(2, 16)
 ```
