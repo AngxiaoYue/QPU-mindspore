@@ -14,7 +14,7 @@ Generated data is in ```<dir of raw data>/NTU-RGB-D/qrel```.
 ## Train and Test
 We choose **RMLP_LSTM** and **QMLP_LSTM** as our demo models. we provide ```.yaml``` file for convenient train and test.
 ```
-python train.py configs/<config name>.yaml
+python train.py config/<config name>.yaml
 ```
 Check the path, especially the path in .yaml file.
 
