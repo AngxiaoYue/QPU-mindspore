@@ -16,9 +16,9 @@ out_channels (int) – The number of channels in the output space.
 ## Inputs
 x (Tensor) - Tensor of shape (∗,in_channels). The in_channels in Args should be equal to in_channels in Inputs. 
 
-Note: in_channels = ```4 * \_ ```, we should cat quaternions' r, i, j, k parts to get the input.
+Note: in_channels = ```4 * _ ```, we should cat quaternions' r, i, j, k parts to get the input.
 
-For example, ``` \[batch, \_ , 4, num\_joint\] -> \[batch, \_ , 4*num\_joint\] -> QPU(). ``` Num\_joint is the number of rotation nodes in the application scenario.
+For example, ``` [batch, _ , 4, num_joint] -> [batch, _ , 4*num_joint] -> QPU(). ``` Num\_joint is the number of rotation nodes in the application scenario.
 
 ## Outputs
 Tensor of shape (∗,out_channels).
